@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><listadejuegos>
+<juego>
+<titulo>Super Mario Bros</titulo>
+<genero>Multiplataformas</genero>
+<plataforma>nes</plataforma>
+<fechadelanzamiento>1957</fechadelanzamiento>
+</juego>
+<juego>
+<titulo>World Of WarCraft</titulo>
+<genero>MMOG</genero>
+<plataforma>PC</plataforma>
+<fechadelanzamiento>2005</fechadelanzamiento>
+</juego>
+</listadejuegos>
