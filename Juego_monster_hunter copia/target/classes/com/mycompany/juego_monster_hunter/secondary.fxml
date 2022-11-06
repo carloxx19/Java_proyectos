@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="panel_combate" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="1077.0" stylesheets="@Estilos.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.juego_monster_hunter.SecondaryController">
+   <children>
+      <ImageView fx:id="monstruo2" fitHeight="255.0" fitWidth="310.0" layoutX="703.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="monstruo1" fitHeight="255.0" fitWidth="310.0" layoutX="70.0" layoutY="152.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" />
+      <ProgressBar fx:id="vida1" disable="true" layoutX="95.0" layoutY="69.0" opacity="0.0" prefHeight="25.0" prefWidth="200.0" progress="0.0" stylesheets="@Estilos.css" />
+      <ProgressBar fx:id="vida2" disable="true" layoutX="756.0" layoutY="67.0" opacity="0.0" prefHeight="25.0" prefWidth="200.0" progress="0.0" stylesheets="@Estilos.css" />
+      <Button fx:id="btn_defender1" disable="true" layoutX="228.0" layoutY="429.0" mnemonicParsing="false" onAction="#combate" opacity="0.0" prefHeight="31.0" prefWidth="69.0" text="defender" />
+      <Button fx:id="btn_atacar1" disable="true" layoutX="133.0" layoutY="429.0" mnemonicParsing="false" onAction="#combate" opacity="0.0" prefHeight="31.0" prefWidth="69.0" text="atacar" />
+      <Button fx:id="btn_atacar2" disable="true" layoutX="772.0" layoutY="429.0" mnemonicParsing="false" onAction="#combate2" opacity="0.0" prefHeight="31.0" prefWidth="69.0" text="atacar" />
+      <Button fx:id="btn_defender2" disable="true" layoutX="867.0" layoutY="429.0" mnemonicParsing="false" onAction="#combate2" opacity="0.0" prefHeight="31.0" prefWidth="69.0" text="defender" />
+      <Button fx:id="estado_alterado1" disable="true" layoutX="133.0" layoutY="484.0" mnemonicParsing="false" onAction="#combate" opacity="0.0" prefHeight="31.0" prefWidth="163.0" text="estado alterado" />
+      <Button fx:id="estado_alterado2" disable="true" layoutX="773.0" layoutY="484.0" mnemonicParsing="false" onAction="#combate2" opacity="0.0" prefHeight="31.0" prefWidth="163.0" text="estado alterado" />
+      <ImageView fx:id="volver" fitHeight="53.0" fitWidth="77.0" layoutX="2.0" layoutY="2.0" onMouseClicked="#volver_evento" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/volver.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn_listo" layoutX="472.0" layoutY="276.0" mnemonicParsing="false" onAction="#activar" prefHeight="47.0" prefWidth="134.0" stylesheets="@Estilos.css" text="LISTO!!!">
+         <font>
+            <Font name="System Font" size="24.0" />
+         </font>
+      </Button>
+      <Text fx:id="texto2" layoutX="756.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="165.6520175933838" />
+      <Text fx:id="texto1" layoutX="95.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="165.6520175933838" />
+   </children>
+</AnchorPane>

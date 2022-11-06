@@ -1,0 +1,112 @@
+/*VENTANA INICIO*/
+#fondo_inicio{
+    -fx-background-size:1080px 600px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image:url('../Imagenes/fondo_inicio.jpg');
+}
+
+#btn_jugar {
+    -fx-background-color:#1AB1D3;
+    -fx-text-fill:white;
+    -fx-border-color:white;
+    -fx-border-width: 3;
+}
+
+#btn_jugar:hover {
+    -fx-background-color:#1AD382;
+    -fx-text-fill:white;
+    
+}
+
+
+
+/*PRIMERA VENTANA*/
+
+#panel{
+    -fx-background-size:1080px 600px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image:url('../Imagenes/fondo1.jpg');
+}
+
+#nombre1{
+    -fx-background-color:#CA6F1E;
+}
+
+#nombre2{
+    -fx-background-color:#CA6F1E;
+}
+
+
+#seleccionar{
+    -fx-background-color:#CA6F1E;
+}
+
+
+#seleccionar:hover {
+    -fx-text-fill: black;
+}
+
+/*PERSONAJES*/
+#afd:hover {
+    -fx-border-color: black;
+}
+
+
+/*SEGUNDA VENTANA*/
+#panel_combate{
+    -fx-background-size:1080px 600px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image:url('../Imagenes/fondo_combate.jpg');
+}
+
+#panel_final{
+    -fx-background-size:1080px 600px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image:url('../Imagenes/img_final.jpg');
+}
+
+#btn_listo{
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 3;
+}
+
+#btn_listo:hover {
+    -fx-background-color: black;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-font-size: 22px;
+}
+
+/*quitar opacidad al estar encima de la imagen de seleccion de personaje*/
+#anjanath1:hover{
+    -fx-opacity:1;
+}
+
+#anjanath2:hover{
+    -fx-opacity:1;
+}
+
+#teostra1:hover{
+    -fx-opacity:1;
+}
+
+#teostra2:hover{
+    -fx-opacity:1;
+}
+
+#rathian1:hover{
+    -fx-opacity:1;
+}
+
+#rathian2:hover{
+    -fx-opacity:1;
+}
+
+#rathalos1:hover{
+    -fx-opacity:1;
+}
+
+#rathalos2:hover{
+    -fx-opacity:1;
+}
