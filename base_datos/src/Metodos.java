@@ -6,7 +6,6 @@ import java.util.Scanner;
 
 public class Metodos {
 
-
     //variables
     Scanner teclado = new Scanner(System.in);
     public Connection conexion;
