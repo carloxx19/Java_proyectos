@@ -127,7 +127,6 @@ public class Metodos {
         PreparedStatement ps = connection.prepareStatement(consulta);
         ps.setDouble(1, precio);
         ps.setInt(2, codigo);
-
         ps.executeUpdate();
     }
 
