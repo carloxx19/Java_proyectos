@@ -79,13 +79,12 @@ public class Metodos {
         ps.setString(1, nombre);
         ps.setDouble(2, precio);
         ps.setInt(3, cod_fabricante);
-
-        System.out.println(ps);
         ps.executeUpdate();
     }
 
     public void mostrar_producto_fabricante(Connection connection) throws SQLException {
-        String consulta = "SELECT producto.nombre from producto JOIN fabricante ON producto.codigo_fabricante = fabricante.codigo where fabricante.nombre=?";
+        String consulta = "SELECT producto.nombre from producto JOIN fabricante ON producto.codigo_fabricante = " +
+                "fabricante.codigo where fabricante.nombre=?";
         String fabricante;
 
         System.out.println("Introduce el nombre del fabricante");
@@ -99,6 +98,7 @@ public class Metodos {
         while (rs.next()) {
             System.out.println("Nombre: " + rs.getString(1));
         }
+        System.out.println("");
     }
 
     public void mostrar_baratos(Connection connection) throws SQLException {
@@ -113,6 +113,7 @@ public class Metodos {
         while (rs.next()) {
             System.out.println("Nombre: " + rs.getString(1) + " || Precio: " + rs.getDouble(2));
         }
+        System.out.println("");
     }
 
     public void editar_precio(Connection connection) throws SQLException {
