@@ -3,6 +3,7 @@ import java.security.PublicKey;
 import java.security.SignedObject;
 import java.sql.*;
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 
 public class Metodos {
 
@@ -143,7 +144,7 @@ public class Metodos {
     }
 
     //Menu para llamar a los metodos.
-    public void menu() throws SQLException {
+    public void menu() throws SQLException, InterruptedException {
         String opcion;
         do {
             System.out.println("""
@@ -161,16 +162,41 @@ public class Metodos {
             opcion = teclado.next();
 
             switch (opcion) {
-                case "1" -> imprimir_fabricante(conexion);
-                case "2" -> imprimir_producto(conexion);
-                case "3" -> insertar_productos(conexion);
-                case "4" -> mostrar_producto_fabricante(conexion);
-                case "5" -> mostrar_baratos(conexion);
-                case "6" -> editar_precio(conexion);
-                case "7" -> borrar_producto(conexion);
+                case "1" -> {
+                    imprimir_fabricante(conexion);
+                    TimeUnit.SECONDS.sleep(4);
+                }
+                case "2" -> {
+                    imprimir_producto(conexion);
+                    TimeUnit.SECONDS.sleep(4);
+                }
+                case "3" -> {
+                    insertar_productos(conexion);
+                    TimeUnit.SECONDS.sleep(4);
+                }
+                case "4" -> {
+                    mostrar_producto_fabricante(conexion);
+                    TimeUnit.SECONDS.sleep(5);
+                }
+                case "5" -> {
+                    mostrar_baratos(conexion);
+                    TimeUnit.SECONDS.sleep(4);
+                }
+                case "6" -> {
+                    editar_precio(conexion);
+                    TimeUnit.SECONDS.sleep(4);
+                }
+                case "7" -> {
+                    borrar_producto(conexion);
+                    TimeUnit.SECONDS.sleep(4);
+                }
 
                 case "salir" -> System.err.println("CERRADO");
                 case "SALIR" -> System.err.println("CERRADO");
+                default -> {
+                    System.err.println("COMANDO INTRODUCIDO INCORRECTO");
+                    TimeUnit.SECONDS.sleep(2);
+                }
             }
         } while (!opcion.equalsIgnoreCase("salir"));
     }
