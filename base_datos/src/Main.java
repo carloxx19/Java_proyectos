@@ -7,8 +7,5 @@ public class Main {
         conexion.driver("com.mysql.cj.jdbc.Driver"); // "com.mysql.cj.jdbc.Driver"
         conexion.conectar();
         conexion.menu();
-
-        System.out.println("hola");
-
     }
 }
