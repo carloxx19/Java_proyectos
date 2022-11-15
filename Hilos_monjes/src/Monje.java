@@ -1,4 +1,4 @@
-public class Monje extends Thread{
+public class Monje extends Thread {
     private Mesa mesa;
     private int monje;
     private int indice_monje;
@@ -28,7 +28,9 @@ public class Monje extends Thread{
     }
 
     public void comer() throws InterruptedException {
+        System.out.println();
         System.out.println("El monje: " + monje + " esta comiendo");
+
         sleep((long) (Math.random() * 4000));
     }
 }

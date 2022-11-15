@@ -27,7 +27,7 @@ public class Mesa {
         tenedores[comprobar_derecha(monje)] = true;
     }
 
-    public synchronized void dejar_tenedores(int monje){
+    public synchronized void dejar_tenedores(int monje) {
         tenedores[comprobar_izquierda(monje)] = false;
         tenedores[comprobar_derecha(monje)] = false;
 

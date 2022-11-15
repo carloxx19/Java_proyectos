@@ -6,6 +6,6 @@ public class Jugador {
     public Jugador() {
         numeros++;
         num = numeros;
-        this.dinero = 300;
+        this.dinero = 50;
     }
 }
