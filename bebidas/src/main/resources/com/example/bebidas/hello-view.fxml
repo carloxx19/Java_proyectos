@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="734.0" prefWidth="1426.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Text layoutX="497.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buscador de bebidas">
+            <font>
+                <Font size="48.0" />
+            </font>
+        </Text>
+        <TextField layoutX="975.0" layoutY="238.0" prefHeight="26.0" prefWidth="189.0" AnchorPane.bottomAnchor="494.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="1842.0" AnchorPane.topAnchor="5.0" />
+        <ComboBox layoutX="9.0" layoutY="679.0" prefHeight="26.0" prefWidth="1406.0" />
+        <Text layoutX="497.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Metodo de busqueda:">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text layoutX="497.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="dato de busqueda:">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <ComboBox fx:id="categorias" layoutX="688.0" layoutY="101.0" prefHeight="26.0" prefWidth="234.0" />
+        <TextField fx:id="filtro" layoutX="689.0" layoutY="138.0" prefHeight="26.0" prefWidth="233.0" />
+      <ImageView fitHeight="489.0" fitWidth="473.0" layoutX="-7.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/pngwing.com%20(3).png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="bebidasVer" layoutX="497.0" layoutY="175.0" prefHeight="491.0" prefWidth="427.0">
+        <columns>
+          <TableColumn prefWidth="188.63079833984375" text="Nombre" />
+          <TableColumn minWidth="9.02813720703125" prefWidth="65.86920166015625" text="alcohol" />
+            <TableColumn prefWidth="109.52813720703125" text="Ingrediente1" />
+            <TableColumn prefWidth="63.07025146484375" text="id" />
+        </columns>
+      </TableView>
+      <ChoiceBox fx:id="choice" layoutX="1060.0" layoutY="163.0" prefWidth="150.0" />
+    </children>
+</AnchorPane>
